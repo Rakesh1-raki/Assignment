@@ -1,0 +1,59 @@
+﻿@model Assignment.Controllers.HomeController
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="~/Home/Edit" method="post">
+    <table>
+        <tr>
+            <td><label>ID</label></td>
+            <td><input value="@ViewBag.emp[0].Id" name="Id" /></td>
+        </tr>
+        <tr>
+            <td><label>FirstName</label></td>
+            <td><input value="@ViewBag.emp[0].FirstName" name="FirstName" /></td>
+        </tr>
+        <tr>
+            <td><label>MiddleName</label></td>
+            <td><input value="@ViewBag.emp[0].MiddleName" name="MiddleName" /></td>
+        </tr>
+        <tr>
+            <td><label>LastName</label></td>
+            <td><input value="@ViewBag.emp[0].LastName" name="LastName" /></td>
+        </tr>
+        <tr>
+            <td><label>Date of Birth</label></td>
+            <td><input value="@ViewBag.emp[0].DOB" name="DOB" /></td>
+        </tr>
+        <tr>
+            <td><label>Designation</label></td>
+            <td><input value="@ViewBag.emp[0].Desgination" name="Desgination" /></td>
+        </tr>
+        <tr>
+            <td><label>ManagerID</label></td>
+            <td><input value="@ViewBag.emp[0].ManagerID" name="ManagerID" /></td>
+        </tr>
+        <tr>
+            <td><label>Salary</label></td>
+            <td><input value="@ViewBag.emp[0].Salary" name="Salary" /></td>
+        </tr>
+        <tr>
+            <td><label>TeamID</label></td>
+            <td><input value="@ViewBag.emp[0].TeamID" name="TeamID" /></td>
+        </tr>
+        <tr>
+            <td><label>Date of Joining</label></td>
+            <td><input value="@ViewBag.emp[0].DOJ" name="DOJ" /></td>
+        </tr>
+        <tr>
+            <td><label>DOL</label></td>
+            <td><input value="@ViewBag.emp[0].DOL" name="DOL" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+</form>
+

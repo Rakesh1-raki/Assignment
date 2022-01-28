@@ -1,0 +1,104 @@
+﻿@model Assignment.Controllers.HomeController
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="~/Home/CreateEmp" method="post">
+    <table>
+        <tr>
+            <td>
+                <lable>ID</lable>
+            </td>
+            <td>
+                <input name="Id" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>FirstName</lable>
+            </td>
+            <td>
+                <input name="FirstName" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>MiddleName</lable>
+            </td>
+            <td>
+                <input name="MiddleName" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>LastName</lable>
+            </td>
+            <td>
+                <input name="LastName" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Date of Birth</lable>
+            </td>
+            <td>
+                <input name="DOB" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Designation</lable>
+            </td>
+            <td>
+                <input name="Desgination" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>ManagerID</lable>
+            </td>
+            <td>
+                <input name="ManagerID" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Salary</lable>
+            </td>
+            <td>
+                <input name="Salary" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>TeamID</lable>
+            </td>
+            <td>
+                <input name="TeamID" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Date of Joining</lable>
+            </td>
+            <td>
+                <input name="DOJ" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <lable>Department</lable>
+            </td>
+            <td>
+                <input name="DOL" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit" />
+            </td>
+        </tr>
+    </table>
+</form>

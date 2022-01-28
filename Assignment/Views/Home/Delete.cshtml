@@ -1,0 +1,20 @@
+﻿@model Assignment.Controllers.HomeController
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<h3>Enter The ID of Employee to delete</h3>
+
+<form action="~/Home/DeleteID" method="post">
+    <table>
+        <tr>
+            <td><label>Employee Id</label></td>
+            <td><input type="text" name="ID" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Delete" /></td>
+        </tr>
+    </table>
+</form>
+

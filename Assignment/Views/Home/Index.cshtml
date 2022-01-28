@@ -1,0 +1,108 @@
+﻿
+@model Assignment.Controllers.HomeController
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <form action="~/Home/Create" method="post">
+        <table>
+            <tr>
+                <td>
+                    <input type="submit" value="CreateNew" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form action="~/Home/Delete" method="post">
+        <table>
+            <tr>
+                <td>
+                    <input type="submit" value="Delete" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table>
+        <tr>
+            <td>
+                ID
+            </td>
+            <td>
+                FirstName
+            </td>
+            <td>
+                MiddleName
+            </td>
+            <td>
+                LastName
+            </td>
+            <td>
+                DOB
+            </td>
+            <td>
+                Designation
+            </td>
+            <td>
+                ManagerID
+            </td>
+            <td>
+                Salary
+            </td>
+            <td>
+                TeamID
+            </td>
+            <td>
+                DOJ
+            </td>
+            <td>
+                DOL
+            </td>
+        </tr>
+        @{ foreach (var emp in ViewBag.Employee)
+            {
+                <tr>
+                    <td>
+                        @emp.Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.FirstName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.MiddleName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.LastName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.Desgination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.ManagerID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.Salary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.TeamID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.DOJ&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        @emp.DOL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <a href="~/Home/Edit/@emp.Id">Edit</a>
+                    </td>
+                </tr>
+            }
+
+        }
+    </table>
+</body>
+</html>
